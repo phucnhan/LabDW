@@ -1,0 +1,107 @@
+.header-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image{
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.image-1 img {
+    top: 0;
+    width: 80%;
+}
+
+.image-2 {
+    top: 15vh; /* Bắt đầu từ giữa trang xuống dưới image-1 */
+    width: 80%;
+}
+
+.container{
+    display: flex;
+    padding-left: 30px;
+}
+button{
+    margin-left: 30px;
+}
+
+h2{
+    margin-left:30px;
+}
+
+p{
+    margin-left:30px;
+}
+
+
+
+.image-3 img {
+    display: block;
+    padding-left: 20px;
+    height: auto; /* Đặt chiều cao tự động để giữ nguyên tỷ lệ khung hình */
+    max-width: 100%; /* Đặt chiều rộng tối đa là 100% */
+}
+
+.content{ 
+    word-wrap:break-word;
+    width: 1100px;
+}
+
+.content ul{
+    padding-left: 80px;
+}
+
+.container1{
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+.container1 img{
+        max-width: 150px; /* Đặt chiều rộng tối đa là 200px */
+        max-height: 150px; /* Đặt chiều cao tối đa là 200px */
+        padding-left: 40px;
+    }
+.image-container1 span{
+    padding-left: 40px;
+}
+.content1 h2{
+    padding-left: 40px;
+}
+
+.content p {
+        padding-left: 40px;
+    }
+
+.content1 p{
+    padding-left: 30px;
+}   
+.content1 h2{
+    padding-left: 30px;
+}  
+
+.container1 img{
+    padding-left: 50px;
+}
+
+.container1 span{
+    padding-left: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+ .column {
+    padding: 0;
+    margin: 0px;
+}
+
+p1{
+    padding-left: 50px;
+}
