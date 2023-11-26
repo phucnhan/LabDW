@@ -1,0 +1,146 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: rgba(97, 170, 149, 0.6);
+            border-radius: 4px;
+            font-family: "Times New Roman", Times, serif;
+
+        }
+
+        .profile-info {
+            margin-left: 20px;
+        }
+
+        .profile-info h2 {
+            margin-bottom: 5px;
+        }
+
+        .profile-info p {
+            margin: 0;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #aac1af99;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #004dc9;
+        }
+
+        .container {
+            color: #004dc9;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .star {
+            color: yellow;
+        }
+
+        .header {
+            background-color: rgb(102, 152, 102);
+            color: yellow;
+            font-size: 36px;
+            text-align: center;
+            padding: 10px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        /* ... (Your existing styles) ... */
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(102, 152, 102);
+    overflow: hidden;
+}
+
+ul.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+ul.menu li a:hover {
+    color: #004dc9;
+}
+.text h2 {
+    color: #004dc9;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(102, 152, 102);
+    color: yellow;
+    padding: 10px;
+    z-index: 1000; /* Ensure the menu is above other elements */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu li a:hover {
+    color: #004dc9;
+}

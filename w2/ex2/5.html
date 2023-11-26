@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2: 5</title>
+</head>
+
+<body>
+    <p>Window Width: <span id="windowWidth"></span></p>
+    <p>Window Height: <span id="windowHeight"></span></p>
+
+    <script>
+        function updateWindowSize() {
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+
+            document.getElementById('windowWidth').textContent = windowWidth;
+            document.getElementById('windowHeight').textContent = windowHeight;
+        }
+
+        // Initial call to set initial values
+        updateWindowSize();
+
+        // Add event listener to update on window resize
+        window.addEventListener('resize', updateWindowSize);
+    </script>
+</body>
+
+</html>

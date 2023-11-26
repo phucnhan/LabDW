@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+
+<body>
+    <!-- Create a container for the form -->
+    <div id="formContainer"></div>
+
+    <script>
+        // Function to create the form
+        function createForm() {
+            const formContainer = document.getElementById('formContainer');
+
+            // Create a form element
+            const myForm = document.createElement('form');
+
+            // Create an input element
+            const submitButton = document.createElement('input');
+            submitButton.type = 'submit';
+            submitButton.value = 'Submit from Exercise 1';
+
+            // Append the input element to the form
+            myForm.appendChild(submitButton);
+
+            // Append the form to the container
+            formContainer.appendChild(myForm);
+        }
+
+        // Function to get the value of the submit button
+        function getSubmitButtonValue() {
+            const myForm = document.querySelector('form');
+            const submitButton = myForm.querySelector('input[type="submit"]');
+
+            // Get the value of the submit button
+            const submitButtonValue = submitButton.value;
+
+            // Display the value (you can replace this with your desired logic)
+            alert('Submit Button Value: ' + submitButtonValue);
+        }
+
+        // Call the createForm function to create the form
+        createForm();
+    </script>
+
+    <!-- Add an event listener to the form to call the getSubmitButtonValue function on form submission -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const myForm = document.querySelector('form');
+            myForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                getSubmitButtonValue();
+            });
+        });
+    </script>
+</body>
+
+</html>

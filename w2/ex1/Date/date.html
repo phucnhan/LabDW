@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Day and Time</title>
+    <script>
+        function displayDateTime() {
+            // Get the current date and time
+            const currentDate = new Date();
+            const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const day = dayOfWeek[currentDate.getDay()];
+            const hours = currentDate.getHours() % 12 || 12; // Convert to 12-hour format
+            const minutes = currentDate.getMinutes();
+            const seconds = currentDate.getSeconds();
+            const period = currentDate.getHours() >= 12 ? 'PM' : 'AM';
+
+            // Display the result
+            const result = `Today is: ${day}.<br>Current time is: ${hours} ${period} : ${minutes} : ${seconds < 10 ? '0' : ''}${seconds}`;
+            document.getElementById('output').innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Current Day and Time</h1>
+    <button onclick="displayDateTime()">Display</button>
+    <p id="output"></p>
+</body>
+
+</html>

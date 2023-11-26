@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1</title>
+    <link rel="stylesheet" href="app.css" />
+    <style>
+        /* Additional styling specific to this HTML file */
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+        /* Add any additional styles specific to this HTML file */
+    </style>
+</head>
+
+<body>
+    <!-- Menu -->
+    <ul class="menu">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#subject">Subjects</a></li>
+        <li><a href="#experience">Experience</a></li>
+    </ul>
+
+    <!-- Profile Section -->
+    <div id="profile" class="text">
+        <div class="header">
+            Profile
+        </div>
+        <div class="container">
+            <img src="./c.jpg" class="profile-pic" alt="Profile Picture">
+            <div class="profile-info">
+                <h2>Đồng Phúc Nhẫn</h2>
+                <h4>Student ID: 20521694</h4>
+                <h4>I'm a passionate individual who enjoys football, gaming, and music in my free time.</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="text">
+        <h2>Contact Information</h2>
+        <p>
+            Gmail: <a href="mailto:phucnhan0406@gmail.com">phucnhan0406@gmail.com</a>
+        </p>
+        <p>
+            <b>
+                <ion-icon name="logo-github"></ion-icon>
+            </b>
+            <a href="https://github.com/phucnhan" target="_blank">GitHub</a>
+        </p>
+        <p>
+            <b>
+                <ion-icon name="logo-facebook"></ion-icon>
+            </b>
+            <a href="https://www.facebook.com/profile.php?id=100011231765259" target="_blank">Personal Facebook</a>
+        </p>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="text">
+        <div>
+            <h2 style="text-align: center; color: rgb(238, 123, 41);">Skills</h2>
+            <ol>
+                <td>HTML/CSS</td>
+                <td><span class="star">&#9733;</span><span class="star">&#9733;</span></td>
+            </ol>
+            <ol>
+                <td>Python</td>
+                <td><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </td>
+            </ol>
+            <ol>
+                <td>React</td>
+                <td><span class="star">&#9733;</span></td>
+            </ol>
+            <ol>
+                <td>SQL</td>
+                <td><span class="star">&#9733;</span><span class="star">&#9733;</span><span
+                        class="star">&#9733;</span><span class="star">&#9733;</span></td>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Subject Section -->
+    <div id="subject" class="text">
+        <h2 style="text-align: center; color: rgb(238, 123, 41);">Subject and learning</h2>
+        <ol>
+            <p>Web Application Development</p>
+            <p>Database</p>
+            <p>Cloud</p>
+        </ol>
+    </div>
+
+    <!-- Experience Section -->
+    <div id="experience" class="text">
+        <!-- ... (Your experience content) ... -->
+        <h2 style="text-align: center; color: rgb(238, 123, 41);">Experience</h2>
+        <h3 style="text-align: left; color: rgb(12, 134, 235);">Education</h3>
+        <div class="column">
+            <h4>I learnt at UIT-VNUHCM from 2020.</h4>
+        </div>
+        <div class="column">
+            <h4>Information System</h4>
+            <p>
+                The education was mainly system design-based course, but I also learned about web development, data
+                analysis, and more. During my time in college, I specialized in OOP and data science. Now, I'm learning
+                web development.
+        </div>
+
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script>
+            function scrollToSection(sectionId) {
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+</body>
+
+</html>

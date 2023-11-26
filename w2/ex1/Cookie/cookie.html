@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Parser</title>
+    <script>
+        // 3. Parse HTTP Cookie header string
+        function parseCookieHeader(cookieHeader) {
+            const cookies = {};
+            const cookiePairs = cookieHeader.split(';');
+
+            for (const pair of cookiePairs) {
+                const [name, value] = pair.trim().split('=');
+                cookies[name] = value;
+            }
+
+            return cookies;
+        }
+
+        function displayCookieResult() {
+            const cookieHeader = document.getElementById('cookieInput').value;
+            const cookieObject = parseCookieHeader(cookieHeader);
+
+            // Display the result
+            const result = JSON.stringify(cookieObject, null, 2);
+            document.getElementById('output').innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Cookie Parser</h1>
+    <label for="cookieInput">Enter Cookie Header:</label>
+    <input type="text" id="cookieInput">
+    <button onclick="displayCookieResult()">Parse Cookie</button>
+    <p id="output"></p>
+</body>
+
+</html>

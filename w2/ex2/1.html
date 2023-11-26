@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2: 1</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <button type="button" id="submitButton" onclick="changeButtonText()">Submit</button>
+        <input type="text" id="textInput" style="display: none;" placeholder="Enter your text">
+    </form>
+
+    <script>
+        function changeButtonText() {
+            const submitButton = document.getElementById('submitButton');
+            const textInput = document.getElementById('textInput');
+
+            // Change the button text
+            submitButton.innerText = 'Submit Text';
+
+            // Show the text input field
+            textInput.style.display = 'inline-block';
+
+            // Focus on the text input
+            textInput.focus();
+
+            // Remove the click event listener to allow text input
+            submitButton.removeEventListener('click', changeButtonText);
+
+            // Add a new click event listener to handle form submission
+            submitButton.addEventListener('click', function () {
+                const enteredText = textInput.value;
+                alert('Entered text: ' + enteredText);
+                document.getElementById('myForm').submit();
+            });
+        }
+    </script>
+</body>
+
+</html>
