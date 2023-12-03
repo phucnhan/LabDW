@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body {font-family: "Open Sans", sans-serif;}
+ul {
+list-style: none;
+}
+.Hw4-app {
+display: flex;
+margin: 40px auto;
+width: 80%;
+background-color: #eee ;
+}
+.Hw4-app .left {
+    width: 30%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Hw4-app .left img{
+    width: 40%;
+    border-radius: 100%;
+    background-image: url(./hw3.jpg);
+}
+
+.Hw4-app .left h2 {
+margin: 10px 20px 0;
+color: rgb(105, 158, 86);
+animation: blink 1s infinite;
+}
+.Hw4-app .left .contact {
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+
+.Hw4-app .left contact h5 {
+    font-weight: 600;
+}
+
+.Hw4-app .left .contact h3 {
+font-size: 15px;
+font-weight: 400;
+}
+
+.Hw4-app .left .contact i{
+margin-right: 8px;
+}
+.Hw4-app .left h4 {
+text-decoration: underline;
+font-style: italic;
+color: rgb(105, 158, 86);
+margin-top: 25px;
+cursor: pointer;
+}
+.Hw4-app .left ul li {
+margin: 10px 0;
+}
+.Hw4-app .left .social {
+display: flex;
+justify-content: center;
+}
+
+.Hw4-app .left .social li {
+margin: 20px 20px 20px 0;
+}
+.Hw4-app .right::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000000bf;
+    position: absolute;
+}
+
+.Hw4-app .right {
+    width: 70%;
+    position: relative;
+}
+.Hw4-app .right img {
+    width: 806px;
+    height: 595px;
+}
+
+.Hw4-app .right .name {
+position: absolute;
+top: 50%;
+left: 70px;
+transform: translateY(-50%);
+}
+.Hw4-app .right .name h1 {
+    color: #fff;
+}
+
+.Hw4-app .right .name h1 span {
+display: block;
+margin-left: 10px;
+margin-top: 10px;
+}
+.Hw4-app .right .name button {
+
+padding: 10px 15px;
+color: #fff;
+background-color: transparent;
+border: 1px solid #fff;
+margin-top: 20px;
+cursor: pointer;
+}
+.Hw4-app .right .name button i {
+margin-left: 10px;
+}
+.Hw4-app .right .dot {
+position: absolute;
+bottom: 10px;
+left: 20px;
+}
+.Hw4-app .right .dot span {
+display: block;
+border-radius: 50%;
+margin-bottom: 8px;
+width: 10px;
+height: 10px;
+background-color: #cacaca;
+cursor: pointer;
+}
+.Hw4-app .right .dot span:first-child {
+background-color: rgb(185, 158, 86);
+}

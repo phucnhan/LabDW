@@ -1,0 +1,20 @@
+
+.piano {
+    display: flex;
+  }
+  
+  .white-key {
+    width: 40px;
+    height: 200px;
+    border: 1px solid #000;
+    background-color: #fff;
+  }
+  
+  .black-key {
+    width: 30px;
+    height: 120px;
+    border: 1px solid #000;
+    background-color: #000;
+    margin-left: -15px; 
+  }
+  
